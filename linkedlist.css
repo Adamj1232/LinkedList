@@ -1,0 +1,63 @@
+body {
+  margin: 0px;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans'
+}
+
+main {
+  height: 45vh;
+  background-color: #455A64;
+  text-align: center;
+}
+
+header{
+  /*padding: 3vh;*/
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 130%;
+  letter-spacing: 1.15px;
+  height: 5vh;
+  width: 100vw;
+  padding-top: 3vh;
+}
+
+.input {
+  width: 90vw;
+  height: 7vh;
+  margin: 2vh;
+  /*border-color: #CFD8DC;*/
+  border: 2px solid #CFD8DC;
+  font-family: 'Open Sans';
+  font-size: 130%;
+  margin-top: 2vh;
+}
+
+.submit {
+  height: 6vh;
+  width: 91vw;
+  margin: 0 2vh;
+  background-color: #FFC107;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-size: 90%;
+  font-weight: 700;
+  margin-top: 2vh;
+}
+
+.bookmarks {
+  height: 55vh;
+  width: 100vw;
+  background-color: #CFD8DC;
+  padding: 2.5
+}
+
+.entry {
+  height: 21.5vh;
+  width: 95vw;
+  border-color: #607D8B;
+  border-width: 1px;
+  background-color: #ffffff;
+}
