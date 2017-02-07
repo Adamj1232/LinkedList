@@ -2,26 +2,35 @@
 <html>
   <head>
     <title>Linked List</title>
-    <link type="text/css" href="/linkedlist/normalize.css">
+    <link type="text/css" href="normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/linkedlist/linkedlist.css">
+    <link rel="stylesheet" type="text/css" href="linkedlist.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   </head>
 
   <body>
 
     <main>
-      <header>Link <img/> List</header>
-
+      <header>Linked<img src="images/linked-list-logo.svg" width="40px">List</header>
       <section>
-        <input/>
-        <input/>
-        <button>Enter</button>
+        <input id="web-title" class="input" type="text" placeholder="Website Title"/>
+        <input id="web-url" class="input" type="text" placeholder="Website Url"/>
+        <button class="submit" type="submit">Enter</button>
       </section>
     </main>
 
+<!-- Possible structure of the bookmark (append()/prepend() method??) .toggleclass for color change-->
     <section>
-
+      <h3>Input Website Title</h3>
+      <a>Input Website Url</a>
+      <button>Read</button>
+      <button>Delete</button>
     </section>
+
+<!-- Need to download jQuery file like a normalize file. Also do we need to keep javascript link?? -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script>
     <script type="text/javascript" src="/linkedlist/linkedlist.js"></script>
+
   </body>
 </html>
