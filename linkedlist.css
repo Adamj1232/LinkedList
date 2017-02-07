@@ -60,13 +60,14 @@ header{
 }
 
 .entry {
-  position: relative;
+  /*position: relative;*/
   left: 5vw;
   height: 21.5vh;
   width: 88vw;
   border: 2px solid #607D8B;
   background-color: #ffffff;
   margin-bottom: 4%;
+  margin-left: 5%;
 }
 
 .title {
