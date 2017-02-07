@@ -47,17 +47,45 @@ header{
   margin-top: 2vh;
 }
 
+.submit:hover {
+  background-color:#FFD773;
+}
+
 .bookmarks {
   height: 55vh;
   width: 100vw;
   background-color: #CFD8DC;
-  padding: 2.5
+  padding-top: 5%;
+  overflow: scroll;
 }
 
 .entry {
+  position: relative;
+  left: 5vw;
   height: 21.5vh;
-  width: 95vw;
-  border-color: #607D8B;
-  border-width: 1px;
+  width: 88vw;
+  border: 2px solid #607D8B;
   background-color: #ffffff;
+  margin-bottom: 4%;
+}
+
+.title {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color:#455A64;
+  border-bottom: 2px solid #CFD8D6;
+  margin: 4%;
+}
+
+.url {
+  border-bottom: 2px solid #CFD8D6;
+  margin: 6% 4% 4% 4%;
+}
+
+.url:hover {
+  text-decoration: underline;
+}
+
+.read {
+  margin: 0% 58% 0% 4%;
 }
