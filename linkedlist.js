@@ -1,9 +1,7 @@
+var $webTitle = $('#web-title')
+var $webUrl = $('#web-url')
 
 $('.submit').on('click', function(){
-  var $webTitle = $('#web-title')
-  var $webUrl = $('#web-url')
-  // console.log($webTitle.val())
-  // console.log($webUrl.val())
 
   $('.bookmarks').prepend(
     '<article class="entry">' +
@@ -12,15 +10,46 @@ $('.submit').on('click', function(){
       '<button class="read">Read</button>' +
       '<button class="delete">Delete</button>' +
     '</article>'
-  )
+  );
+  clearField();
 })
+var $webTitle = $('#web-title')
+var $submit = $('.submit')
+var $webUrl = $('#web-url')
+
+function clearField() {
+  if ($webTitle.val()  != "" && $webUrl.val() != ""){
+    $webTitle.val = "";
+    $webUrl.val = "";
+  }
+}
 
 $('.bookmarks').on('click', '.read', function(){
   $(this).toggleClass('active');
-})
-$('.bookmarks').on('click', '.read', function(){
   $(this).parent('.entry').toggleClass('activebackground');
 })
+
 $('.bookmarks').on('click', '.delete', function(){
   $(this).parent('.entry').remove();
 })
+
+// $('#web-title').add('#web-url').on('keyup', function(){
+//   if ($webUrl.length > 0) {
+//    $('#submit').prop('disabled', false);
+// });
+// }
+
+// $($webTitle, $webUrl).keyup(function() {
+//   if ($webUrl.length > 0) {
+//    $('#submit').prop('disabled', false);
+// });
+
+ // && $webTitle.length > 0
+
+
+
+
+ // function disableSubmit () {
+ //   var submitBtn = document.querySelector('#submit');
+ //   submitBtn.disabled = true;
+ // }
