@@ -60,9 +60,7 @@ header{
 }
 
 .entry {
-  /*position: relative;*/
   left: 5vw;
-  height: 21.5vh;
   width: 88vw;
   border: 2px solid #607D8B;
   background-color: #ffffff;
@@ -79,14 +77,22 @@ header{
 }
 
 .url {
+  display:block;
   border-bottom: 2px solid #CFD8D6;
   margin: 6% 4% 4% 4%;
+  text-decoration: none;
 }
 
 .url:hover {
-  text-decoration: underline;
+  text-decoration: underline solid #FFC107;
 }
 
 .read {
   margin: 0% 58% 0% 4%;
+}
+.active {
+  color: #F05A28;
+}
+.activebackground {
+  background-color:#F2F4F4;
 }
