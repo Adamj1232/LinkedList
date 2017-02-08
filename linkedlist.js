@@ -2,6 +2,8 @@ var $webTitle = $('#web-title');
 var $webUrl = $('#web-url');
 var $submit = $('.submit');
 
+$('#submit').prop('disabled', true);
+
 $('.submit').on('click', function(){
 
   $('.bookmarks').prepend(
@@ -12,15 +14,20 @@ $('.submit').on('click', function(){
       '<button class="delete">Delete</button>' +
     '</article>'
   );
-  // clearField();
+  clearField();
+  disableSubmit();
 })
 
-// function clearField() {
-//   if ($webTitle.val()  != "" && $webUrl.val() != ""){
-//     $webTitle.val = "";
-//     $webUrl.val = "";
-//   }
-// }
+function disableSubmit() {
+  $('#submit').prop('disabled', true);
+}
+
+function clearField() {
+  {
+    $webTitle.val("");
+    $webUrl.val("");
+  }
+}
 
 $('.bookmarks').on('click', '.read', function(){
   $(this).toggleClass('active');
@@ -29,6 +36,14 @@ $('.bookmarks').on('click', '.read', function(){
 
 $('.bookmarks').on('click', '.delete', function(){
   $(this).parent('.entry').remove();
+})
+
+$('input[type=text]').on('keyup', function () {
+  if ($webTitle.val() !== "" && $webUrl.val() !== ""){
+    $('#submit').prop('disabled', false);
+  } else {
+    $('#submit').prop('disabled', true);
+  }
 })
 
 // $('#web-title').add('#web-url').on('keyup', function(){

@@ -131,14 +131,18 @@ button:hover {
 .read {
   height: 26px
   padding: 0;
-  background-color: #0000;
+  background: transparent;
+  float: left;
 }
 
 .delete {
   height: 26px;
   padding: 0;
-  background:  transparent;
+  background: transparent;
   float:right;
+}
+.delete:hover {
+  background: transparent;
 }
 
 button.active {
@@ -194,5 +198,4 @@ button.active {
     width: 8.5vw;
     max-width: 12vw;
   }
-
 }
