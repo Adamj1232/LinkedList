@@ -23,6 +23,10 @@ header {
   padding-top: 3vh;
 }
 
+img {
+  width: 40px;
+}
+
 button {
   border: none;
   border-bottom: 2px solid #F2F4F4;
@@ -88,7 +92,7 @@ button:hover {
   background-color: #ffffff;
   margin-bottom: 4%;
   margin-left: 5%;
-  padding-bottom: 2%;
+  padding: 0% 2% 2% 2%;
 }
 
 .title {
@@ -96,13 +100,13 @@ button:hover {
   font-weight: 700;
   color:#455A64;
   border-bottom: 2px solid #CFD8D6;
-  margin: 4%;
 }
 
 .url {
   display:block;
   border-bottom: 2px solid #CFD8D6;
-  margin: 6% 4% 4% 4%;
+  margin-top: 6%;
+  margin-bottom: 4%;
   text-decoration: none;
 }
 
@@ -111,7 +115,6 @@ button:hover {
 }
 
 .read {
-  margin: 0% 63% 0% 4%;
   padding: 0;
   background-color: #0000;
 }
@@ -119,6 +122,7 @@ button:hover {
 .delete {
   padding: 0;
   background:  transparent;
+  float:right;
 }
 
 button.active {
@@ -131,4 +135,45 @@ button.active {
 }
 .activebackground {
   background-color:#F2F4F4;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding-top:30%;
+    width: 50vw;
+    font-size:300%;
+    letter-spacing: 1.60px;
+    font-weight: 800;
+    margin-bottom: 15%;
+  }
+  .input {
+    height:5vh;
+    width:45vw;
+    margin-bottom: 7%;
+  }
+  .submit {
+    height: 5vh;
+    width:45.5vw;
+  }
+  .entry {
+    width: 43vw;
+  }
+  .main {
+    display: inline-block;
+    width:50%;
+    height:100%;
+  }
+  .bookmarks {
+    float:right;
+    height: 92.5%;
+  }
+
+  .input, .submit {
+
+  }
+
+  img {
+    width: 65px;
+  }
+
 }
