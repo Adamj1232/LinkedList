@@ -16,7 +16,7 @@ header {
   /*padding: 3vh;*/
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 130%;
+  font-size: 150%;
   letter-spacing: 1.15px;
   height: 5vh;
   width: 100vw;
@@ -36,6 +36,11 @@ button {
   font-size: 90%;
   color: #455A64;
   outline: none;
+}
+h3 {
+  margin-bottom: 0;
+  margin-top: 3%;
+  padding-bottom: 3%;
 }
 
 button:hover {
@@ -90,8 +95,7 @@ button:hover {
   width: 88vw;
   border: 2px solid #607D8B;
   background-color: #ffffff;
-  margin-bottom: 4%;
-  margin-left: 5%;
+  margin: 0 auto 4% auto;
   padding: 0% 2% 2% 2%;
 }
 
@@ -100,29 +104,45 @@ button:hover {
   font-weight: 700;
   color:#455A64;
   border-bottom: 2px solid #CFD8D6;
+  font-size: 130%
 }
 
 .url {
   display:block;
   border-bottom: 2px solid #CFD8D6;
-  margin-top: 6%;
-  margin-bottom: 4%;
+  margin-top: 0%;
+  margin-bottom: 3.5%;
   text-decoration: none;
+  color: #607D8B;
+  line-height: 3.5;
 }
 
 .url:hover {
-  text-decoration: underline solid #FFC107;
+  font-weight: 700;
+  color: #455A64;
+  text-decoration: underline #FFC107;
+  padding-bottom: 0;
 }
 
+/*.underline {
+  text-decoration: underline;
+  color: #F2F4F4;*/
+}
 .read {
+  height: 26px
   padding: 0;
-  background-color: #0000;
+  background: transparent;
+  float: left;
 }
 
 .delete {
+  height: 26px;
   padding: 0;
-  background:  transparent;
+  background: transparent;
   float:right;
+}
+.delete:hover {
+  background: transparent;
 }
 
 button.active {
@@ -137,12 +157,12 @@ button.active {
   background-color:#F2F4F4;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   header {
-    padding-top:30%;
+    padding-top:25vh;
     width: 50vw;
-    font-size:300%;
-    letter-spacing: 1.60px;
+    font-size:6.4vw;
+    letter-spacing: 0px;
     font-weight: 800;
     margin-bottom: 15%;
   }
@@ -157,6 +177,7 @@ button.active {
   }
   .entry {
     width: 43vw;
+    margin-top: 5%;
   }
   .main {
     display: inline-block;
@@ -165,7 +186,8 @@ button.active {
   }
   .bookmarks {
     float:right;
-    height: 92.5%;
+    height: 100%;
+    padding-top: 0%;
   }
 
   .input, .submit {
@@ -173,7 +195,7 @@ button.active {
   }
 
   img {
-    width: 65px;
+    width: 8.5vw;
+    max-width: 12vw;
   }
-
 }
