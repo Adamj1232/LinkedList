@@ -2,8 +2,8 @@
 $('.submit').on('click', function(){
   var $webTitle = $('#web-title')
   var $webUrl = $('#web-url')
-  console.log($webTitle.val())
-  console.log($webUrl.val())
+  // console.log($webTitle.val())
+  // console.log($webUrl.val())
 
   $('.bookmarks').prepend(
     '<article class="entry">' +
@@ -19,7 +19,7 @@ $('.bookmarks').on('click', '.read', function(){
   $(this).toggleClass('active');
 })
 $('.bookmarks').on('click', '.read', function(){
-  $('.entry').toggleClass('activebackground');
+  $(this).parent('.entry').toggleClass('activebackground');
 })
 $('.bookmarks').on('click', '.delete', function(){
   $(this).parent('.entry').remove();
