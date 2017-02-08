@@ -1,5 +1,6 @@
-var $webTitle = $('#web-title')
-var $webUrl = $('#web-url')
+var $webTitle = $('#web-title');
+var $webUrl = $('#web-url');
+var $submit = $('.submit');
 
 $('.submit').on('click', function(){
 
@@ -11,18 +12,15 @@ $('.submit').on('click', function(){
       '<button class="delete">Delete</button>' +
     '</article>'
   );
-  clearField();
+  // clearField();
 })
-var $webTitle = $('#web-title')
-var $submit = $('.submit')
-var $webUrl = $('#web-url')
 
-function clearField() {
-  if ($webTitle.val()  != "" && $webUrl.val() != ""){
-    $webTitle.val = "";
-    $webUrl.val = "";
-  }
-}
+// function clearField() {
+//   if ($webTitle.val()  != "" && $webUrl.val() != ""){
+//     $webTitle.val = "";
+//     $webUrl.val = "";
+//   }
+// }
 
 $('.bookmarks').on('click', '.read', function(){
   $(this).toggleClass('active');
