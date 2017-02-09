@@ -9,7 +9,7 @@ $('.submit').on('click', function(){
   $('.bookmarks').prepend(
     '<article class="entry">' +
       '<h3 class="title">' + $webTitle.val() + '</h3>' +
-      '<a class="url" target="_blank" href="https://' + $webUrl.val() +'">' + $webUrl.val() + '</a>' +
+      '<section class="scroll"><a class="url" target="_blank" href="https://' + $webUrl.val() +'">' + $webUrl.val() + '</a></section>' +
       '<hr>' +
       '<button class="read">Read</button>' +
       '<button class="delete">Delete</button>' +

@@ -90,6 +90,10 @@ button:hover {
   overflow: scroll;
 }
 
+.scroll {
+  overflow: scroll;
+}
+
 .entry {
   width: 88vw;
   height: 125px;
