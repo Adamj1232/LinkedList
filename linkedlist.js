@@ -10,6 +10,7 @@ $('.submit').on('click', function(){
     '<article class="entry">' +
       '<h3 class="title">' + $webTitle.val() + '</h3>' +
       '<a class="url" target="_blank" href="https://' + $webUrl.val() +'">' + $webUrl.val() + '</a>' +
+      '<hr>' +
       '<button class="read">Read</button>' +
       '<button class="delete">Delete</button>' +
     '</article>'
