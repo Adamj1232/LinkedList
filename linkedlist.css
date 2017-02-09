@@ -104,7 +104,8 @@ button:hover {
   font-weight: 700;
   color:#455A64;
   border-bottom: 2px solid #CFD8D6;
-  font-size: 130%
+  font-size: 130%;
+  overflow:scroll;
 }
 
 .url {
@@ -115,6 +116,7 @@ button:hover {
   text-decoration: none;
   color: #607D8B;
   line-height: 45px;
+  overflow:scroll;
 }
 
 .url:hover {
