@@ -9,7 +9,7 @@ $('.submit').on('click', function(){
   $('.bookmarks').prepend(
     '<article class="entry">' +
       '<h3 class="title">' + $webTitle.val() + '</h3>' +
-      '<span class=underline> <a class="url" target="_blank" href="https://' + $webUrl.val() +'">' + $webUrl.val() + '</a></span>' +
+      '<a class="url" target="_blank" href="https://' + $webUrl.val() +'">' + $webUrl.val() + '</a>' +
       '<button class="read">Read</button>' +
       '<button class="delete">Delete</button>' +
     '</article>'
@@ -45,24 +45,3 @@ $('input[type=text]').on('keyup', function () {
     $('#submit').prop('disabled', true);
   }
 })
-
-// $('#web-title').add('#web-url').on('keyup', function(){
-//   if ($webUrl.length > 0) {
-//    $('#submit').prop('disabled', false);
-// });
-// }
-
-// $($webTitle, $webUrl).keyup(function() {
-//   if ($webUrl.length > 0) {
-//    $('#submit').prop('disabled', false);
-// });
-
- // && $webTitle.length > 0
-
-
-
-
- // function disableSubmit () {
- //   var submitBtn = document.querySelector('#submit');
- //   submitBtn.disabled = true;
- // }
