@@ -90,6 +90,10 @@ button:hover {
   overflow: scroll;
 }
 
+.scroll {
+  overflow: scroll;
+}
+
 .entry {
   width: 88vw;
   height: 125px;
@@ -97,6 +101,7 @@ button:hover {
   background-color: #ffffff;
   margin: 0px auto 20px auto;
   padding: 0px 2% 10px 2%;
+  /*overflow:scroll;*/
 }
 
 .title {
@@ -109,8 +114,7 @@ button:hover {
 }
 
 .url {
-  display:block;
-  border-bottom: 2px solid #CFD8D6;
+  border-bottom: 2px solid #F2F4F4;
   margin-top: 0px;
   margin-bottom: 8px;
   text-decoration: none;
@@ -122,7 +126,7 @@ button:hover {
 .url:hover {
   font-weight: 700;
   color: #455A64;
-  text-decoration: underline #FFC107;
+  border-bottom: 2px solid #FFC107;
   padding-bottom: 0;
 }
 
